@@ -1,38 +1,92 @@
-.App {
+
+h1{
   text-align: center;
+  font-family: 'Bangers', cursive;
+  color: rgb(41, 41, 41);
+  letter-spacing: 3px;
+  font-size: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.textbox{
+  display: block;
+  margin: 0 auto;
+  padding: 20px 90px;
+  font-size: 25px;
+  font-family: 'Tektur', cursive;
+  font: bolder;
+  font-weight: 900;
+  border: 3px solid black;
+  border-radius: 20px;
+}
+button{
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 8px 30px;
+  border-radius: 10px;
+  box-shadow: 4px 4px rgb(66, 66, 66);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+button:hover{
+  background-color: rgb(149, 149, 149);
+  color: rgb(255, 255, 255);
+  transition: 1s;
+  box-shadow: 8px 8px rgb(0, 0, 0);
+}
+label {
+  display: block;
+  padding-left: 15px;
+  text-indent: -15px;
+  font-size: 35px;
+  border-radius: 10px;
+  font-family: 'Tektur', cursive;
+}
+
+.checkbox {
+  width: 30px;
+  height: 40px;
+  vertical-align: bottom; 
+  margin-right: 20px;
+  position: relative;
+}
+
+.task{
+  margin: auto;
+  position: relative;
+  top: 50%;
+  width: 20%; 
+  border: 10px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  background-color: rgb(126, 126, 126);
+}
+ul li{
+  list-style-type: none;
+}
+
+.delete{
+  background-color: rgb(0, 0, 0);
+  color: aliceblue;
+}
+.delete:hover{
+  background-color: red;
+}
+
+@media only screen and (max-width: 985px) {
+  .task{
+    top: 50%;
+    width: 30%; 
+  }
+  .textbox{
+   padding: 10px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 600px) {
+  .task{
+    top: 50%;
+    width: 60%; 
   }
-  to {
-    transform: rotate(360deg);
+  .textbox{
+   padding: 10px;
   }
 }
