@@ -1,5 +1,6 @@
 import React from "react";
 import {useState, useEffect} from 'react'
+import TodoList from "./components/TodoList";
 import './App.css'
 
 function App() {
@@ -61,7 +62,7 @@ function App() {
           <button type="submit">Add</button>
         </form>
         <h1>Items</h1>
-    <div className="task">
+    {/* <div className="task">
       {todo.map (todo => {  
       return(
         <ul>
@@ -69,13 +70,14 @@ function App() {
           <label HtmlFor="item">
             <input className="checkbox" type="checkbox" checked={todo.completed} onChange={e => toggle(todo.id,e.target.checked)} id="item" />
             {todo.title}
-          </label>
+          </label>                                      
           <button className="delete" onClick={() => deletetodo(todo.id)}>delete</button>
           </li>
         </ul>
         )
       })}
-    </div>
+    </div> */}
+<TodoList todos={todo} toggle={toggle} deleteTodo={deletetodo} />
   </div>
         </>
     
