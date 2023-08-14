@@ -77,7 +77,7 @@ function App() {
         )
       })}
     </div> */}
-<TodoList todos={todo} toggle={toggle} deleteTodo={deletetodo} />
+<TodoList todos={todo} toggle={toggle} deletetodo={deletetodo} />
   </div>
         </>
     

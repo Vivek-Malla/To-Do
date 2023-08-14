@@ -1,6 +1,6 @@
 import TodoItem from './TodoItem'
 
-const TodoList = ({todos,toggle,deleteTodo,Todo}) => {
+const TodoList = ({todos,toggle,deletetodo,Todo}) => {
     return (
     <div className="task">
       {todos.map((todo) => (
@@ -8,7 +8,7 @@ const TodoList = ({todos,toggle,deleteTodo,Todo}) => {
             key={todo.id}
             todo={todo}
             toggle={Todo}
-            deleteTodo={deleteTodo}
+            deletetodo={deletetodo}
           />
         ))}
     </div>
