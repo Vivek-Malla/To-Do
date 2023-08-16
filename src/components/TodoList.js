@@ -1,14 +1,12 @@
 import TodoItem from './TodoItem'
 
-const TodoList = ({todos,toggle,deletetodo,Todo}) => {
+const TodoList = ({todos}) => {
     return (
     <div className="task">
       {todos.map((todo) => (
           <TodoItem
             key={todo.id}
             todo={todo}
-            toggle={Todo}
-            deletetodo={deletetodo}
           />
         ))}
     </div>
